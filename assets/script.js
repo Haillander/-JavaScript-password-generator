@@ -1,16 +1,3 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-  passwordText.value = password;
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
 
 function generatePassword() {
 
@@ -73,7 +60,7 @@ function generatePassword() {
       finalPwdArray = finalPwdArray.concat(smallLetters);
     }
 
-    /* Code to actually build the final password, 
+     /* Code to actually build the final password, 
       the number of times 'for' loop is executed is equal to the password length selected by the user.*/
 
       for(var i = 0; i < selectedPwdLength; i++){
@@ -86,3 +73,18 @@ function generatePassword() {
     }  
     return finalPwd;
 }
+
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
+
