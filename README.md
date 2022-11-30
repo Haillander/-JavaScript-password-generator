@@ -32,7 +32,7 @@ JavaScript Password Generator
 
 * Live Site
 
-
+https://haillander.github.io/-JavaScript-password-generator/
 
 * GitHub Environment
 
